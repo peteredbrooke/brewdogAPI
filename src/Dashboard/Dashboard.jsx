@@ -5,7 +5,7 @@ import CardList from "../CardList";
 
 const Dashboard = (props) => {
 
-    const { beers } = props; 
+    const beers  = props.beers; 
 
     const contentJsx = beers.length? (
         <CardList beers={beers} />
@@ -14,13 +14,13 @@ const Dashboard = (props) => {
 
     return (
         <div>
-            <ul>
-                {/* {
+            {/* <ul>
+                {
                     beers.map((beer) => {
                         return <li>{beer.name}</li>
                     })
-                } */}
-            </ul>
+                }
+            </ul> */}
             {contentJsx}
         </div>
     )
