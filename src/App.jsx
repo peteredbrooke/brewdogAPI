@@ -5,7 +5,8 @@ import Dashboard from "./Dashboard"
 
 
 function App() {
-  const [beers, setBeers] = useState("");
+  const [beers, setBeers] = useState([]);
+  const [ allBeers, setAllBeers ] = useState([]); 
   
   // const getBeerData = (beer) => {
   //   let beerData = [];
@@ -16,6 +17,7 @@ function App() {
 
   useEffect(() => {
     fetchBeers();
+    fetchAllBeers();
   }, [0])
 
   const cleanBeerData = (beer) => {
@@ -34,8 +36,23 @@ function App() {
       return response.json();
     })
     .then((response) => {
+      if (!searchTerm) {
+        return;
+      }
       const cleanBeers = response.map(cleanBeerData)
       setBeers(cleanBeers)
+      console.log(response)
+    })
+  }
+
+  // Function to fetch all beers as default?? 
+  const fetchAllBeers = () => {
+    fetch(`https://api.punkapi.com/v2/beers`).then((response) => {
+      return response.json();
+    })
+    .then((response) => {
+      const cleanBeers = response.map(cleanBeerData)
+      setAllBeers(cleanBeers)
       console.log(response)
     })
   }
@@ -43,11 +60,10 @@ function App() {
   return (
     <>
     <div>
-      <h1>Find your favourite Brewdog</h1>
+    <NavBar updateSearchText={fetchBeers}/>
         <div className={styles.content}>
-            {/* <Header /> */}
-            <NavBar updateSearchText={fetchBeers}/>
-            <Dashboard beers={beers} />
+            
+            <Dashboard beers={beers} allBeers={allBeers}/>
         </div>
     </div>
     </>

@@ -6,7 +6,7 @@ const SearchBar = (props) => {
     const input = <input type="text" placeholder={placeholder}  onInput={e => updateSearchText(e.target.value)} className={styles.searchBar}/> 
     return (
         <div className={styles.search}>
-            <h1>Search here for Beers</h1>
+            <h4>Search here for Beers</h4>
             {input}  
         </div>
     )

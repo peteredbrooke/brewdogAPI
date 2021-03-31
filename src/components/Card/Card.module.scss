@@ -6,10 +6,12 @@
     align-items: center;
     height: 800px;
     width: 300px;
-    background-color: cornflowerblue;
+    background-color: inherit;
     margin: 20px;
     overflow: hidden;
     padding: 5px;
+    border-radius: 30px;
+    border: solid 2px #92AFD7;
 }
 
 img {

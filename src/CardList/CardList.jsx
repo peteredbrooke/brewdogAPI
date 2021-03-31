@@ -8,12 +8,18 @@ const CardList = (props) => {
 
     const getBeerJsx = (beer) => {
        return <div key={beer.id}>
-            <Card beer={beer}/>
-        </div>
+                  <Card beer={beer}/>
+              </div>
     }
+
+
+
     return (
+      // If beers has not been searched set card default to all beers  
         <div className={styles.cardlist}>
-          {beers.map(getBeerJsx)}  
+          
+          {beers.map(getBeerJsx)} 
+           
         </div>
     )
 }
