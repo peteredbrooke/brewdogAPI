@@ -1,22 +1,23 @@
 {
   "files": {
-    "main.css": "/brewdogAPI/static/css/main.451964d2.chunk.css",
-    "main.js": "/brewdogAPI/static/js/main.8ea9421c.chunk.js",
-    "main.js.map": "/brewdogAPI/static/js/main.8ea9421c.chunk.js.map",
+    "main.css": "/brewdogAPI/static/css/main.8bb12d3f.chunk.css",
+    "main.js": "/brewdogAPI/static/js/main.1b64b660.chunk.js",
+    "main.js.map": "/brewdogAPI/static/js/main.1b64b660.chunk.js.map",
     "runtime-main.js": "/brewdogAPI/static/js/runtime-main.b5edec3c.js",
     "runtime-main.js.map": "/brewdogAPI/static/js/runtime-main.b5edec3c.js.map",
-    "static/js/2.1f4e8441.chunk.js": "/brewdogAPI/static/js/2.1f4e8441.chunk.js",
-    "static/js/2.1f4e8441.chunk.js.map": "/brewdogAPI/static/js/2.1f4e8441.chunk.js.map",
+    "static/js/2.865e9951.chunk.js": "/brewdogAPI/static/js/2.865e9951.chunk.js",
+    "static/js/2.865e9951.chunk.js.map": "/brewdogAPI/static/js/2.865e9951.chunk.js.map",
     "static/js/3.83064cbb.chunk.js": "/brewdogAPI/static/js/3.83064cbb.chunk.js",
     "static/js/3.83064cbb.chunk.js.map": "/brewdogAPI/static/js/3.83064cbb.chunk.js.map",
     "index.html": "/brewdogAPI/index.html",
-    "static/css/main.451964d2.chunk.css.map": "/brewdogAPI/static/css/main.451964d2.chunk.css.map",
-    "static/js/2.1f4e8441.chunk.js.LICENSE.txt": "/brewdogAPI/static/js/2.1f4e8441.chunk.js.LICENSE.txt"
+    "static/css/main.8bb12d3f.chunk.css.map": "/brewdogAPI/static/css/main.8bb12d3f.chunk.css.map",
+    "static/js/2.865e9951.chunk.js.LICENSE.txt": "/brewdogAPI/static/js/2.865e9951.chunk.js.LICENSE.txt",
+    "static/media/SearchBar.module.scss": "/brewdogAPI/static/media/search-512.d9e42577.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.b5edec3c.js",
-    "static/js/2.1f4e8441.chunk.js",
-    "static/css/main.451964d2.chunk.css",
-    "static/js/main.8ea9421c.chunk.js"
+    "static/js/2.865e9951.chunk.js",
+    "static/css/main.8bb12d3f.chunk.css",
+    "static/js/main.1b64b660.chunk.js"
   ]
 }
