@@ -4,8 +4,66 @@
 // }
 
 .searchBar {
-    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    border: none;
     z-index: -1;
     justify-content: center;
     align-items: center;
+    background-color: inherit;
+    border-bottom: solid 2px #92AFD7;
+
+}
+
+.searchText {
+    font-size: 25px;
+    font-style: italic;
+
+}
+
+.slidecontainer {
+    width: 100%;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 25px;
+    background-color: #92AFD7;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    height: 15px;
+    border-radius: 5px;
+    border: solid 2px black;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    background: aquamarine;
+    border: 0;
+    height: 25px;
+    border-radius: 50%;
+    // background: url("./images/bottle.png");
+    cursor: pointer;
+    border: solid 2px black;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: aquamarine;
+    border: 0;
+    height: 25px;
+    border-radius: 50%;
+    // background: url("./images/bottle.png");
+    cursor: pointer;
 }

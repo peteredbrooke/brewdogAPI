@@ -15,7 +15,7 @@ const CardList = (props) => {
 
 
     return (
-      // If beers has not been searched set card default to all beers  
+        
         <div className={styles.cardlist}>
           
           {beers.map(getBeerJsx)} 

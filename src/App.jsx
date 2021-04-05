@@ -8,16 +8,11 @@ function App() {
   const [beers, setBeers] = useState([]);
   const [ allBeers, setAllBeers ] = useState([]); 
   
-  // const getBeerData = (beer) => {
-  //   let beerData = [];
-  //   Object.keys(recipe).forEach((key) => {
-  //     if (key.includes("id", ))
-  //   })
-  // }
 
   useEffect(() => {
     fetchBeers();
     fetchAllBeers();
+    fetchBeerABV();
   }, [0])
 
   const cleanBeerData = (beer) => {
@@ -45,7 +40,20 @@ function App() {
     })
   }
 
-  // Function to fetch all beers as default?? 
+  const fetchBeerABV = (searchAbv) => {
+    fetch(`https://api.punkapi.com/v2/beers?brewed_before=11-2012&abv_lt=${searchAbv}`).then((response) => {
+      return response.json();
+    })
+    .then((response) => {
+      if (!searchAbv) {
+        return;
+      }
+      const cleanBeers= response.map(cleanBeerData)
+      setBeers(cleanBeers)
+      console.log(response); 
+    })
+  }
+
   const fetchAllBeers = () => {
     fetch(`https://api.punkapi.com/v2/beers`).then((response) => {
       return response.json();
@@ -57,14 +65,18 @@ function App() {
     })
   }
 
+
+
   return (
     <>
     <div>
-    <NavBar updateSearchText={fetchBeers}/>
+      
+    <NavBar updateSearchText={fetchBeers} updateBeerABV={fetchBeerABV}/>
         <div className={styles.content}>
             
             <Dashboard beers={beers} allBeers={allBeers}/>
         </div>
+        
     </div>
     </>
   );
