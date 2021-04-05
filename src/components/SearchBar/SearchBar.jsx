@@ -5,7 +5,7 @@ import styles from "./SearchBar.module.scss"
 
 
 const SearchBar = (props) => {
-    const { placeholder, updateSearchText, updateBeerABV } = props; 
+    const { updateSearchText, updateBeerABV } = props; 
     const input = <input type="text" placeholder="Search...."  onInput={e => updateSearchText(e.target.value)} className={styles.searchBar}/> 
 
 
@@ -30,17 +30,22 @@ const SearchBar = (props) => {
     
 
 
-    // on change of slider value, display beers with maximum value only 
-    // on change of slider display the max value in text above slider bar  
+    // on change of slider value, display beers with maximum value only - DONE
+    // on change of slider display the max value in text above slider bar - DONE 
     // do this with or without the use of the search bar???
     // only display results after search bar has input??
 
 
     return (
         <div className={styles.search}>
-            {input} 
+            {/* <div className={styles.searchCon}>
+                 
+            </div> */}
+
+            {input}
             <p className={styles.searchText}>Set-  {sliderValue + " " + "Abv %"}</p> 
             {slider}
+            
             
         </div>
     )

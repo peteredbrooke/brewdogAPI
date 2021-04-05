@@ -4,17 +4,38 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 800px;
+    height: 600px;
     width: 300px;
     background-color: inherit;
     margin: 20px;
-    overflow: hidden;
+    // overflow: hidden;
     padding: 5px;
     border-radius: 30px;
     border: solid 2px #92AFD7;
+
+
 }
 
-img {
+.cardTitle {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.textSpace {
+    height: 200px;
+    width: 260px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.beerImage {
+    position: relative;
+    top: 5px;
     background-repeat: no-repeat;
     background-size: contain;
     height: 200px;

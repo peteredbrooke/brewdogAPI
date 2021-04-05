@@ -12,7 +12,6 @@ const NavBar = (props) => {
         <div className={styles.NavBar}>
              <h1>BREWDOG API</h1>
             <SearchBar updateSearchText={updateSearchText} updateBeerABV={updateBeerABV} />
-            {/* <Button/> */}
         </div>
     )
 }
