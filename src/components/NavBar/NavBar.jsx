@@ -11,7 +11,7 @@ const NavBar = (props) => {
     return (
         <div className={styles.NavBar}>
              <h1>BREWDOG API</h1>
-            <SearchBar placeholder="Search here.." updateSearchText={updateSearchText} updateBeerABV={updateBeerABV} />
+            <SearchBar updateSearchText={updateSearchText} updateBeerABV={updateBeerABV} />
             {/* <Button/> */}
         </div>
     )

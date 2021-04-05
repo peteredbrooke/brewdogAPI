@@ -6,7 +6,7 @@ import styles from "./SearchBar.module.scss"
 
 const SearchBar = (props) => {
     const { placeholder, updateSearchText, updateBeerABV } = props; 
-    const input = <input type="text" placeholder={placeholder}  onInput={e => updateSearchText(e.target.value)} className={styles.searchBar}/> 
+    const input = <input type="text" placeholder="Search...."  onInput={e => updateSearchText(e.target.value)} className={styles.searchBar}/> 
 
 
     const [ sliderValue, setSliderValue ] = useState("5");
@@ -38,11 +38,10 @@ const SearchBar = (props) => {
 
     return (
         <div className={styles.search}>
-            <p className={styles.searchText}>SEARCH</p>
             {input} 
-            <p className={styles.searchText}>SET MAX ABV %</p> 
+            <p className={styles.searchText}>Set-  {sliderValue + " " + "Abv %"}</p> 
             {slider}
-            {sliderValue + " " + "ABV %"}
+            
         </div>
     )
 }

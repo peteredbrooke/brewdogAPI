@@ -1,17 +1,33 @@
-// .search {
-//     display: flex;
-//     flex-direction: column;
-// }
+.search {
+    display: flex;
+    flex-direction: column;
+}
 
 .searchBar {
     padding: 10px;
-    width: 300px;
+    width: 250px;
     border: none;
     z-index: -1;
     justify-content: center;
     align-items: center;
     background-color: inherit;
     border-bottom: solid 2px #92AFD7;
+    outline: none;
+    margin-bottom: 20px;
+    background-image: url('./images/search-512.webp');
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    padding-left: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-style: italic;
+}
+
+::placeholder {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-style: italic;
+    color: black;
 
 }
 
@@ -27,7 +43,7 @@
 
 .slider {
     -webkit-appearance: none;
-    width: 100%;
+    width: 300px;
     height: 25px;
     background-color: #92AFD7;
     outline: none;
