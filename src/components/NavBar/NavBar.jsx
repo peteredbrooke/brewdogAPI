@@ -10,7 +10,7 @@ const NavBar = (props) => {
 
     return (
         <div className={styles.NavBar}>
-             <h1>SEARCH HERE FOR BEERS</h1>
+             <h1>BREWDOG API</h1>
             <SearchBar placeholder="Search here.." updateSearchText={updateSearchText} updateBeerABV={updateBeerABV} />
             {/* <Button/> */}
         </div>
