@@ -3,15 +3,28 @@
     flex-direction: row;
     width: 100vw;
     height: 200px;
-    background-color: #7fffd4;
+
     justify-content: space-around;
     align-items: center;
     padding-top: 10px;
+    z-index: 999;
 
     h1 {
+        padding: 10px;
         font-style: italic;
         font-weight: lighter;
-        font-size: 120px;
+        font-size: 8vw;
         color: #92AFD7;
+    }
+}
+
+@media (max-width: 960px) {
+    .NavBar {
+        flex-direction: column;
+        padding: 10px;
+
+        h1 {
+            padding-top: 5vh;
+        }
     }
 }

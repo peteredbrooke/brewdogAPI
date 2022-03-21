@@ -38,6 +38,7 @@ function App() {
       setBeers(cleanBeers)
       console.log(response)
     })
+    
   }
 
   const fetchBeerABV = (searchAbv) => {

@@ -1,13 +1,13 @@
 .search {
     display: flex;
     flex-direction: column;
+
 }
 
 .searchBar {
     padding: 10px;
     width: 250px;
     border: none;
-    z-index: -1;
     justify-content: center;
     align-items: center;
     background-color: inherit;
@@ -77,4 +77,8 @@
     height: 75px;
     background: url("./images/bottle5.png");
     cursor: pointer;
+}
+
+@media (max-width: 960px) {
+    .searchBar {}
 }
