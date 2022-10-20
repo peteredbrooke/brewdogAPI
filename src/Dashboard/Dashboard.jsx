@@ -12,9 +12,9 @@ const Dashboard = (props) => {
     ) : <CardList beers={allBeers} /> ; 
 
     return (
-        <div>   
+        <>   
             {contentJsx}
-        </div>
+        </>
     )
 }
 

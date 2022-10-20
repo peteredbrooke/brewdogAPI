@@ -27,13 +27,6 @@ const SearchBar = (props) => {
         defaultValue={sliderValue} 
         className={styles.slider} />
 
-    
-
-
-    // on change of slider value, display beers with maximum value only - DONE
-    // on change of slider display the max value in text above slider bar - DONE 
-    // do this with or without the use of the search bar???
-    // only display results after search bar has input??
 
 
     return (

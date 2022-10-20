@@ -3,8 +3,6 @@
     flex-direction: column;
 
     .searchBar {
-        padding: 10px;
-        width: 250px;
         border: none;
         justify-content: center;
         align-items: center;
@@ -13,28 +11,29 @@
         outline: none;
         margin-bottom: 20px;
         font-family: 'Oswald', sans-serif;
-        background-image: url('./images/search-512.webp');
         background-size: 30px 30px;
         background-repeat: no-repeat;
         padding-left: 40px;
         padding-top: 5px;
-        font-size: 25px;
+        font-size: 2vh;
         font-style: italic;
+        color: white;
     }
 
     ::placeholder {
-        font-size: 3vh;
+        font-size: 2vh;
         font-style: italic;
         font-weight: lighter;
-        color: black;
+        color: white;
         opacity: 0.5;
 
     }
 
     .searchText {
-        font-size: 3vh;
+        font-size: 2vh;
         font-style: italic;
         font-family: 'Oswald', sans-serif;
+        color: white;
 
     }
 

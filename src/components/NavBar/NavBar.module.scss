@@ -2,12 +2,14 @@
     display: flex;
     flex-direction: row;
     width: 100vw;
-    height: 200px;
-
+    height: -moz-fit-content;
+    height: fit-content;
+    max-height: 25vh;
+    background-color: black;
     justify-content: space-around;
     align-items: center;
-    padding-top: 10px;
     z-index: 999;
+    top: 0;
 
     h1 {
         padding: 10px;
@@ -21,6 +23,7 @@
     .NavBar {
         flex-direction: column;
         padding: 10px;
+        max-height: fit-content;
 
         h1 {
             padding-top: 5vh;
