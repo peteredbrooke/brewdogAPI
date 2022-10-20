@@ -73,8 +73,7 @@ function App() {
     <div>
       
     <NavBar updateSearchText={fetchBeers} updateBeerABV={fetchBeerABV}/>
-        <div className={styles.content}>
-            
+        <div className={styles.content}>    
             <Dashboard beers={beers} allBeers={allBeers}/>
         </div>
         
