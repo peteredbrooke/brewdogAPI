@@ -13,31 +13,55 @@
     border-radius: 30px;
     border: solid 2px #92AFD7;
 
+    .cardTitle {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
 
-}
+        h1,
+        h3 {
+            max-width: 80%;
+        }
 
-.cardTitle {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+    }
 
-}
+    .textSpace {
+        width: 80%;
+        // text-overflow: ellipsis;
+        overflow: auto;
+    }
 
-.textSpace {
-    height: 200px;
-    width: 260px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
 
-.beerImage {
-    position: relative;
-    top: 5px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 200px;
-    width: 50px;
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .beerImage {
+        position: relative;
+        padding: 1em;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 15vh;
+        min-height: 15vh;
+        // width: 50px;
+    }
+
 }
