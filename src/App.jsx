@@ -70,13 +70,11 @@ function App() {
 
   return (
     <>
-    <div>
-      
-    <NavBar updateSearchText={fetchBeers} updateBeerABV={fetchBeerABV}/>
+    <div className={styles.wrapper}>
+        <NavBar updateSearchText={fetchBeers} updateBeerABV={fetchBeerABV}/>
         <div className={styles.content}>    
             <Dashboard beers={beers} allBeers={allBeers}/>
-        </div>
-        
+        </div>  
     </div>
     </>
   );
